@@ -12,16 +12,5 @@ class MainActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_main)
         main = ActivityMainBinding.inflate(layoutInflater)
         setContentView(main.root)
-
-        main.btnAdd.setOnClickListener {
-            main.txtCount.text = "${++count}"
-        }
-        main.btnSub.setOnClickListener {
-            main.txtCount.text = "${--count}"
-        }
-        main.btnReset.setOnClickListener {
-            count = 0
-            main.txtCount.text = "$count"
-        }
     }
 }
