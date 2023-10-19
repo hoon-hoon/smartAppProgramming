@@ -90,6 +90,13 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         }) {
             Text(text = "문자")
         }
+        Button(modifier = modifier.fillMaxWidth(), onClick = {
+            val intent = Intent(context, SecondActivity::class.java)
+            intent.putExtra("sms_body", "전화 부탁")
+            startActivity(context, intent, null)
+        }) {
+            Text(text = "Activity")
+        }
     }
 
 }
