@@ -1745,7 +1745,24 @@
             "outputFile": "kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/src/main/res/values-night/themes.xml",
+                    "source": "/Users/choehun/.gradle/caches/transforms-3/60c55cbef2e6cdef5b8f3b785c00f588/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12,38",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "179,249,333,417,513,615,717,3572",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "244,328,412,508,610,712,806,3656"
+                    }
+                },
+                {
+                    "source": "/Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/src/main/res/values-night/themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1761,23 +1778,6 @@
                         "endLines": "5",
                         "endColumns": "12",
                         "endOffsets": "174"
-                    }
-                },
-                {
-                    "source": "/Users/choehun/.gradle/caches/transforms-3/60c55cbef2e6cdef5b8f3b785c00f588/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "6,7,8,9,10,11,12,38",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "179,249,333,417,513,615,717,3572",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "244,328,412,508,610,712,806,3656"
                     }
                 },
                 {
@@ -2911,6 +2911,25 @@
                     }
                 },
                 {
+                    "source": "/Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,331",
+                        "endLines": "5,7",
+                        "endColumns": "12,80",
+                        "endOffsets": "325,407"
+                    },
+                    "to": {
+                        "startLines": "2489,6440",
+                        "startColumns": "4,4",
+                        "startOffsets": "174782,451383",
+                        "endLines": "2492,6440",
+                        "endColumns": "12,79",
+                        "endOffsets": "174901,451458"
+                    }
+                },
+                {
                     "source": "/Users/choehun/.gradle/caches/transforms-3/6329689fc09d96ecea88e0a2c886c5fa/transformed/lifecycle-viewmodel-2.5.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -2983,23 +3002,6 @@
                     }
                 },
                 {
-                    "source": "/Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,97",
-                        "endColumns": "41,41",
-                        "endOffsets": "92,134"
-                    },
-                    "to": {
-                        "startLines": "638,955",
-                        "startColumns": "4,4",
-                        "startOffsets": "32659,56206",
-                        "endColumns": "41,41",
-                        "endOffsets": "32696,56243"
-                    }
-                },
-                {
                     "source": "/Users/choehun/.gradle/caches/transforms-3/4dae1036e86902b2f055441e14dfca0a/transformed/constraintlayout-2.1.4/res/values/values.xml",
                     "from": {
                         "startLines": "2,9,10,15,16,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,42,43,44,45,55,63,64,65,70,71,76,81,82,83,88,89,94,95,100,101,102,108,109,110,115,121,122,123,124,130,131,132,133,136,139,142,143,146,149,150,151,152,153,156,159,160,161,162,168,173,176,179,180,181,186,187,188,191,194,195,198,201,204,207,208,209,212,215,216,221,222,228,233,236,239,240,241,242,243,244,245,246,247,248,249,250,266,272,273,274,275,276,283,289,290,291,294,299,300,308,309,310,311,312,313,314,315,324,325,326,332,333,339,343,344,345,346,347,356,360,361,362,380,566,694,700,704,874,1026,1039,1055,1080,1103,1106,1109,1112,1141,1168,1185,1271,1279,1292,1308,1312,1342,1355,1359,1369,1379,1423,1436,1440,1443,1459,1500,1535,1542,1559",
@@ -3035,23 +3037,6 @@
                         "endLines": "35,647,648,649,650,1038,1039,1040,2130,5447,5450,5453,10012",
                         "endColumns": "51,60,61,61,63,58,56,53,12,12,12,12,24",
                         "endOffsets": "1687,33398,33460,33522,33586,61816,61873,61927,151393,382357,382483,382611,659494"
-                    }
-                },
-                {
-                    "source": "/Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "53",
-                        "endOffsets": "65"
-                    },
-                    "to": {
-                        "startLines": "1941",
-                        "startColumns": "4",
-                        "startOffsets": "128203",
-                        "endColumns": "53",
-                        "endOffsets": "128252"
                     }
                 },
                 {
@@ -3129,25 +3114,6 @@
                     }
                 },
                 {
-                    "source": "/Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "2,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "100,331",
-                        "endLines": "5,7",
-                        "endColumns": "12,80",
-                        "endOffsets": "325,407"
-                    },
-                    "to": {
-                        "startLines": "2489,6440",
-                        "startColumns": "4,4",
-                        "startOffsets": "174782,451383",
-                        "endLines": "2492,6440",
-                        "endColumns": "12,79",
-                        "endOffsets": "174901,451458"
-                    }
-                },
-                {
                     "source": "/Users/choehun/.gradle/caches/transforms-3/f26d7682e72985517502dd76f8307a8b/transformed/appcompat-resources-1.6.1/res/values/values.xml",
                     "from": {
                         "startLines": "2,18,24,34,50",
@@ -3205,6 +3171,23 @@
                     }
                 },
                 {
+                    "source": "/Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "53",
+                        "endOffsets": "65"
+                    },
+                    "to": {
+                        "startLines": "1941",
+                        "startColumns": "4",
+                        "startOffsets": "128203",
+                        "endColumns": "53",
+                        "endOffsets": "128252"
+                    }
+                },
+                {
                     "source": "/Users/choehun/.gradle/caches/transforms-3/cc238cc0f4365d2a57a0c551253d1075/transformed/lifecycle-runtime-2.5.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -3219,6 +3202,23 @@
                         "startOffsets": "121200",
                         "endColumns": "42",
                         "endOffsets": "121238"
+                    }
+                },
+                {
+                    "source": "/Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,41",
+                        "endOffsets": "92,134"
+                    },
+                    "to": {
+                        "startLines": "638,955",
+                        "startColumns": "4,4",
+                        "startOffsets": "32659,56206",
+                        "endColumns": "41,41",
+                        "endOffsets": "32696,56243"
                     }
                 }
             ]

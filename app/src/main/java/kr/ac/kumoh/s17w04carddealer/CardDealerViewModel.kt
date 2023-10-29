@@ -1,5 +1,6 @@
 package kr.ac.kumoh.s17w04carddealer
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -18,6 +19,7 @@ class CardDealerViewModel : ViewModel() {
                 num = Random.nextInt(52)
             } while (num in newCards)
             newCards[i] = num
+            Log.d("newCards", num.toString())
         }
         newCards.sort()
         _cards.value = newCards // 제일 중요한 부분

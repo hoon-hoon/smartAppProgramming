@@ -1,8 +1,8 @@
-#Mon Oct 16 15:31:37 KST 2023
-base.0=/Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
-base.3=/Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
+#Sun Oct 29 20:31:13 KST 2023
+base.0=/Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+base.3=/Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=4/classes.dex

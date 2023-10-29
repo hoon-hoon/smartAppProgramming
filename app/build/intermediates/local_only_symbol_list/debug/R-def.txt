@@ -73,6 +73,10 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id btn_shuffle
 id card1
+id card2
+id card3
+id card4
+id card5
 layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_round

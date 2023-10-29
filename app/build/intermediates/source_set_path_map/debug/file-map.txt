@@ -22,10 +22,10 @@ kr.ac.kumoh.s17w04carddealer.app-drawerlayout-1.1.1-20 /Users/choehun/.gradle/ca
 kr.ac.kumoh.s17w04carddealer.app-recyclerview-1.1.0-21 /Users/choehun/.gradle/caches/transforms-3/e6f2c476c33bd0cbea0777f9e06f83ea/transformed/recyclerview-1.1.0/res
 kr.ac.kumoh.s17w04carddealer.app-appcompat-resources-1.6.1-22 /Users/choehun/.gradle/caches/transforms-3/f26d7682e72985517502dd76f8307a8b/transformed/appcompat-resources-1.6.1/res
 kr.ac.kumoh.s17w04carddealer.app-lifecycle-livedata-core-2.5.1-23 /Users/choehun/.gradle/caches/transforms-3/f8f49fc60dd19be0d98b348b38f6b327/transformed/lifecycle-livedata-core-2.5.1/res
-kr.ac.kumoh.s17w04carddealer.app-pngs-24 /Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/build/generated/res/pngs/debug
-kr.ac.kumoh.s17w04carddealer.app-resValues-25 /Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/build/generated/res/resValues/debug
-kr.ac.kumoh.s17w04carddealer.app-packageDebugResources-26 /Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-kr.ac.kumoh.s17w04carddealer.app-packageDebugResources-27 /Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-kr.ac.kumoh.s17w04carddealer.app-merged_res-28 /Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/build/intermediates/merged_res/debug
-kr.ac.kumoh.s17w04carddealer.app-debug-29 /Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/src/debug/res
-kr.ac.kumoh.s17w04carddealer.app-main-30 /Users/choehun/Desktop/2023_2/smartApp/S17W04CardDealer/app/src/main/res
+kr.ac.kumoh.s17w04carddealer.app-pngs-24 /Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/build/generated/res/pngs/debug
+kr.ac.kumoh.s17w04carddealer.app-resValues-25 /Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/build/generated/res/resValues/debug
+kr.ac.kumoh.s17w04carddealer.app-packageDebugResources-26 /Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+kr.ac.kumoh.s17w04carddealer.app-packageDebugResources-27 /Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+kr.ac.kumoh.s17w04carddealer.app-merged_res-28 /Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/build/intermediates/merged_res/debug
+kr.ac.kumoh.s17w04carddealer.app-debug-29 /Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/src/debug/res
+kr.ac.kumoh.s17w04carddealer.app-main-30 /Users/choehun/Desktop/smartApp/smartAppProgramming/w04/S17W04CardDealer/app/src/main/res

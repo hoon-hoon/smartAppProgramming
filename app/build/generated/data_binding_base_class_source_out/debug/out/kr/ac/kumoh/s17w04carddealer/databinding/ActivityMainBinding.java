@@ -26,11 +26,28 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final ImageView card1;
 
+  @NonNull
+  public final ImageView card2;
+
+  @NonNull
+  public final ImageView card3;
+
+  @NonNull
+  public final ImageView card4;
+
+  @NonNull
+  public final ImageView card5;
+
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnShuffle,
-      @NonNull ImageView card1) {
+      @NonNull ImageView card1, @NonNull ImageView card2, @NonNull ImageView card3,
+      @NonNull ImageView card4, @NonNull ImageView card5) {
     this.rootView = rootView;
     this.btnShuffle = btnShuffle;
     this.card1 = card1;
+    this.card2 = card2;
+    this.card3 = card3;
+    this.card4 = card4;
+    this.card5 = card5;
   }
 
   @Override
@@ -72,7 +89,32 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, btnShuffle, card1);
+      id = R.id.card2;
+      ImageView card2 = ViewBindings.findChildViewById(rootView, id);
+      if (card2 == null) {
+        break missingId;
+      }
+
+      id = R.id.card3;
+      ImageView card3 = ViewBindings.findChildViewById(rootView, id);
+      if (card3 == null) {
+        break missingId;
+      }
+
+      id = R.id.card4;
+      ImageView card4 = ViewBindings.findChildViewById(rootView, id);
+      if (card4 == null) {
+        break missingId;
+      }
+
+      id = R.id.card5;
+      ImageView card5 = ViewBindings.findChildViewById(rootView, id);
+      if (card5 == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, btnShuffle, card1, card2, card3,
+          card4, card5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
