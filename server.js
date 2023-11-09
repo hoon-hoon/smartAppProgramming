@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/song', (req, res) => {
-    const sql = 'select * from lol'
+    const sql = 'select * from song'
     
       db.query(sql, (err, rows) => {
           if (err) {
