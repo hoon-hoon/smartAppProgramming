@@ -2,6 +2,7 @@ package kr.ac.kumoh.s17w04carddealer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -36,19 +37,52 @@ class MainActivity : AppCompatActivity() {
         main.btnShuffle.setOnClickListener {
             model.shuffle()
             val hand: List<Int> = model.cards.value?.toList() ?: emptyList()
-
             val result = evaluateHand(hand)
             val alertDialog = AlertDialog.Builder(this)
             alertDialog.setTitle("Poker Hand Result")
             alertDialog.setMessage("Result: $result")
             alertDialog.setPositiveButton("OK", null)
             alertDialog.show()
-
         }
 
+        main.btnSimul.setOnClickListener {
+            runSimulation(10000)
+        }
     }
 
+    private fun runSimulation(simulationCount: Int) {
+        val model = CardDealerViewModel()
+        val handOccurrences = mutableMapOf<String, Int>()
+
+        repeat(simulationCount) {
+            model.shuffle()
+            val hand: List<Int> = model.cards.value?.toList() ?: emptyList()
+            val result = evaluateHand(hand)
+            handOccurrences[result] = handOccurrences.getOrDefault(result, 0) + 1
+        }
+
+        val sortedOccurrences = handOccurrences.entries.sortedByDescending { it.value }
+        val resultStringBuilder = StringBuilder()
+        resultStringBuilder.append("족보별 출현 횟수 및 확률\n")
+
+        for ((hand, count) in sortedOccurrences) {
+            val probability = count.toDouble() / simulationCount * 100
+            resultStringBuilder.append("$hand: $count 회, 확률: $probability%\n")
+        }
+
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        alertDialogBuilder.setTitle("시뮬레이션 결과")
+        alertDialogBuilder.setMessage(resultStringBuilder.toString())
+        alertDialogBuilder.setPositiveButton("확인", null)
+        val alertDialog = alertDialogBuilder.create()
+        alertDialog.show()
+    }
+
+
     private fun getCardName(c: Int): String {
+        if (c == -1) {
+            return "joker_card"
+        }
         var shape = when (c / 13) {
             0 -> "spades"
             1 -> "diamonds"
@@ -64,14 +98,17 @@ class MainActivity : AppCompatActivity() {
                 shape = shape.plus("2")
                 "jack"
             }
+
             11 -> {
                 shape = shape.plus("2")
                 "queen"
             }
+
             12 -> {
                 shape = shape.plus("2")
                 "king"
             }
+
             else -> "error"
         }
 //        return if (number in arrayOf("jack", "queen", "king"))
@@ -81,10 +118,10 @@ class MainActivity : AppCompatActivity() {
         return "c_${number}_of_${shape}"
     }
 
-//    과제부분
+    //과제부분
     private fun isFlush(cards: List<Int>): Boolean {
-    val firstSuit = cards[0] / 13
-    return cards.all { it / 13 == firstSuit }
+        val firstSuit = cards[0] / 13
+        return cards.all { it / 13 == firstSuit }
     }
 
     private fun isStraight(cards: List<Int>): Boolean {
@@ -117,6 +154,7 @@ class MainActivity : AppCompatActivity() {
         val values = counts.values.toList()
         return values.contains(3) && values.contains(2)
     }
+
     private fun isThreeOfAKind(cards: List<Int>): Boolean {
         val counts = mutableMapOf<Int, Int>()
         for (card in cards) {
@@ -153,19 +191,22 @@ class MainActivity : AppCompatActivity() {
         }
         return false
     }
+
+
+
     private fun evaluateHand(cards: List<Int>): String {
         if (cards.size != 5) {
             return "Invalid hand"
         }
 
-        val sortedCards = cards.sortedByDescending { it % 13 }
+        val sortedCards = cards.sortedByDescending { if (it % 13 == 0) 13 else it % 13 }
 
         val isFlush = isFlush(sortedCards)
         val isStraight = isStraight(sortedCards)
 
         if (isFlush && isStraight) {
             if (sortedCards[0] % 13 == 12) {
-                return "Royal Flush"
+                return "Royal Straight Flush"
             }
             return "Straight Flush"
         }
@@ -190,7 +231,16 @@ class MainActivity : AppCompatActivity() {
         if (isOnePair(sortedCards)) {
             return "One Pair"
         }
-        return "High Card"
+
+        val highCardValue = when (val highCardRank = sortedCards[0] % 13) {
+            10 -> "Jack"
+            11 -> "Queen"
+            12 -> "King"
+            0 -> "ACE"
+            else -> (highCardRank + 1).toString()
+        }
+
+        return "$highCardValue High Card"
     }
 
 }

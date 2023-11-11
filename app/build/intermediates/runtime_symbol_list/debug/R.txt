@@ -2994,6 +2994,7 @@ int drawable ic_mtrl_chip_checked_black 0x7f0700d4
 int drawable ic_mtrl_chip_checked_circle 0x7f0700d5
 int drawable ic_mtrl_chip_close_circle 0x7f0700d6
 int drawable ic_search_black_24 0x7f0700d7
+int drawable joker_card 0x7f070122
 int drawable m3_appbar_background 0x7f0700d8
 int drawable m3_avd_hide_password 0x7f0700d9
 int drawable m3_avd_show_password 0x7f0700da
@@ -3167,6 +3168,7 @@ int id bounceBoth 0x7f08005f
 int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
 int id btn_shuffle 0x7f080062
+int id btn_simul 0x7f0801f3
 int id buttonPanel 0x7f080063
 int id cache_measures 0x7f080064
 int id callMeasure 0x7f080065

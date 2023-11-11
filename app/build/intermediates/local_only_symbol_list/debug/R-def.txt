@@ -71,7 +71,9 @@ drawable c_queen_of_spades2
 drawable c_red_joker
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable joker_card
 id btn_shuffle
+id btn_simul
 id card1
 id card2
 id card3

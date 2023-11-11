@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/drawable_c_king_of_clubs.png.flat",
-        "source": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-main-30:/drawable/c_king_of_clubs.png"
-    },
-    {
         "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/drawable_c_ace_of_spades2.png.flat",
         "source": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-main-30:/drawable/c_ace_of_spades2.png"
+    },
+    {
+        "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/drawable_c_king_of_clubs.png.flat",
+        "source": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-main-30:/drawable/c_king_of_clubs.png"
     },
     {
         "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -128,10 +128,6 @@
         "source": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-main-30:/drawable/c_jack_of_spades2.png"
     },
     {
-        "merged": "kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/layout-land_activity_main.xml.flat",
-        "source": "kr.ac.kumoh.s17w04carddealer.app-main-30:/layout-land/activity_main.xml"
-    },
-    {
         "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/drawable_c_10_of_clubs.png.flat",
         "source": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-main-30:/drawable/c_10_of_clubs.png"
     },
@@ -142,6 +138,10 @@
     {
         "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/drawable_c_8_of_diamonds.png.flat",
         "source": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-main-30:/drawable/c_8_of_diamonds.png"
+    },
+    {
+        "merged": "kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "kr.ac.kumoh.s17w04carddealer.app-main-30:/layout/activity_main.xml"
     },
     {
         "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/xml_backup_rules.xml.flat",
@@ -230,6 +230,10 @@
     {
         "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-main-30:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/drawable_joker_card.png.flat",
+        "source": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-main-30:/drawable/joker_card.png"
     },
     {
         "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-merged_res-28:/drawable_c_8_of_spades.png.flat",
