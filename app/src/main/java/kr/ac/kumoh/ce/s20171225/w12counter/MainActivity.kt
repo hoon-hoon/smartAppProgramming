@@ -26,10 +26,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kr.ac.kumoh.ce.s20171225.w12counter.ui.theme.W12CounterTheme
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.setValue
+import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        val vm = ViewModelProvider(this)[CounterViewModel::class.java]
         super.onCreate(savedInstanceState)
         setContent {
             MyApp {
@@ -40,8 +43,8 @@ class MainActivity : ComponentActivity() {
                     verticalArrangement = Arrangement.Center,
                 ) {
                     //Clicker()
-                    Counter()
-                    Counter()
+                    Counter(vm)
+                    Counter(vm)
                 }
             }
         }
@@ -63,12 +66,14 @@ fun MyApp(content: @Composable () -> Unit) {
 @Composable
 fun Clicker() {
     val (txtString, setTxtString) = remember { mutableStateOf("눌러주세요") }
-
-    Column(modifier = Modifier
-        .padding(8.dp),
+    Column(
+        modifier = Modifier
+            .padding(8.dp),
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(text = txtString,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = txtString,
             fontSize = 70.sp,
         )
         Button(modifier = Modifier
@@ -82,29 +87,29 @@ fun Clicker() {
 }
 
 @Composable
-fun Counter() {
-    val (count, setCount) = rememberSaveable {
-        mutableStateOf(0)
-    };
+fun Counter(viewModel: CounterViewModel) {
+//    val (count, setCount) = rememberSaveable { mutableStateOf(0) };
+    val count by viewModel.count.observeAsState(0)
 
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "$count",
+        Text(
+            text = "$count",
             fontSize = 70.sp,
         )
         Row {
-            Button( modifier = Modifier.weight(1f),
+            Button(modifier = Modifier.weight(1f),
                 onClick = {
-                    setCount(count+1)
+                    viewModel.onAdd()
                 }) {
                 Text("증가")
             }
             Spacer(modifier = Modifier.width(8.dp))
-            Button( modifier = Modifier.weight(1f),
+            Button(modifier = Modifier.weight(1f),
                 onClick = {
-                    setCount(count-1)
+                    viewModel.onSub()
                 }) {
                 Text("감소")
             }
