@@ -23,10 +23,20 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kr.ac.kumoh.ce.s20171225.w1203lazylist.ui.theme.W1203LazyListTheme
+import androidx.compose.foundation.lazy.items
+
+
+data class Song(var title: String, var singer: String)
+private val songs = mutableListOf<Song>()
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        repeat(10) {
+            songs.add(Song("선물","멜로망스"))
+            songs.add(Song("서언물","멜로망스"))
+            songs.add(Song("선무울","멜로망스"))
+        }
         setContent {
             MainScreen()
         }
@@ -54,14 +64,14 @@ fun MyList() {
         verticalArrangement = Arrangement.spacedBy(8.dp),
         contentPadding = PaddingValues(horizontal = 8.dp)
     ) {
-        items(30) {
-            SongItem(it)
+        items(songs) { song ->
+            SongItem(song)
         }
     }
 }
 
 @Composable
-fun SongItem(index: Int) {
+fun SongItem(song: Song) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -69,8 +79,8 @@ fun SongItem(index: Int) {
             .padding(16.dp)
         // chain method 를 쓸 때 순서가 중요함. !!
     ) {
-        TextTitle(title = "노래 $index")
-        TextSinger(title = "가수 $index")
+        TextTitle(title = "노래 ${song.title}")
+        TextSinger(title = "가수 ${song.singer}")
     }
 }
 
