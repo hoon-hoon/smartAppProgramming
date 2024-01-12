@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-mergeDebugResources-27:/layout/activity_main.xml",
+        "source": "/Users/choehun/.gradle/daemon/8.0/kr.ac.kumoh.s17w04carddealer.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "kr.ac.kumoh.s17w04carddealer.app-mergeDebugResources-27:/layout/activity_main.xml",
+        "source": "kr.ac.kumoh.s17w04carddealer.app-main-30:/layout/activity_main.xml"
+    }
+]
